@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DevAll Digitalise Solutions - Your vision is the start of market leadership. Giải pháp Data, AI, Web & App Development">
+    <meta name="keywords" content="DevAll, Data, AI, Web Development, App Development, Digital Solutions">
+    <title>DevAll Digitalise Solutions</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components/header.css">
+    <link rel="stylesheet" href="css/components/navigation.css">
+    <link rel="stylesheet" href="css/components/products.css">
+    <link rel="stylesheet" href="css/components/form.css">
+    <link rel="stylesheet" href="css/components/footer.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo-small">
+                    <span class="logo-text">DevAll</span>
+                </div>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#home" class="nav-link active">Trang chủ</a></li>
+                    <li><a href="#services" class="nav-link">Dịch vụ</a></li>
+                    <li><a href="#about" class="nav-link">Về chúng tôi</a></li>
+                    <li><a href="#contact" class="nav-link">Liên hệ</a></li>
+                    <li><a href="#contact" class="nav-link cta-nav">Đặt lịch tư vấn</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header/Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="logo-container fade-in-up">
+                    <div class="logo">
+                        <svg viewBox="0 0 200 200" class="logo-svg">
+                            <defs>
+                                <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#c41e3a;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#0066cc;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <circle cx="100" cy="100" r="90" fill="url(#logoGradient)" opacity="0.1"/>
+                            <text x="100" y="120" text-anchor="middle" fill="url(#logoGradient)" font-size="60" font-weight="bold" font-family="Poppins, sans-serif">DA</text>
+                        </svg>
+                    </div>
+                    <h1 class="company-name">DevAll</h1>
+                    <p class="company-subtitle">Digitalise Solutions</p>
+                </div>
+                
+                <div class="slogan-container fade-in-up delay-1">
+                    <h2 class="slogan">Your vision is the start of market leadership...</h2>
+                    <p class="slogan-description">
+                        Chúng tôi biến tầm nhìn của bạn thành hiện thực với các giải pháp công nghệ tiên tiến, 
+                        giúp doanh nghiệp của bạn dẫn đầu thị trường trong kỷ nguyên số.
+                    </p>
+                </div>
+                
+                <div class="cta-buttons fade-in-up delay-2">
+                    <a href="#contact" class="btn btn-primary">Đặt lịch tư vấn</a>
+                    <a href="#services" class="btn btn-secondary">Khám phá dịch vụ</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Về DevAll</h2>
+                <p class="section-subtitle">Đối tác công nghệ đáng tin cậy của bạn</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        <strong>DevAll Digitalise Solutions</strong> là đơn vị tiên phong trong việc cung cấp các giải pháp 
+                        chuyển đổi số toàn diện. Với đội ngũ chuyên gia giàu kinh nghiệm và công nghệ tiên tiến, 
+                        chúng tôi cam kết mang đến những sản phẩm và dịch vụ chất lượng cao nhất.
+                    </p>
+                    <p>
+                        Chúng tôi không chỉ phát triển phần mềm, mà còn xây dựng những giải pháp chiến lược 
+                        giúp doanh nghiệp của bạn tối ưu hóa quy trình, tăng năng suất và dẫn đầu trong thị trường cạnh tranh.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products/Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Dịch vụ của chúng tôi</h2>
+                <p class="section-subtitle">Giải pháp công nghệ toàn diện cho mọi nhu cầu</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Data Solutions -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 3h7v7H3zM14 3h7v7h-7zM14 14h7v7h-7zM3 14h7v7H3z"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Data Solutions</h3>
+                    <p class="service-description">
+                        Phân tích và xử lý dữ liệu thông minh, xây dựng Data Warehouse, ETL Pipeline, 
+                        và các giải pháp Business Intelligence giúp tối ưu hóa quyết định kinh doanh.
+                    </p>
+                    <ul class="service-features">
+                        <li>Data Analytics & Visualization</li>
+                        <li>Data Warehouse & ETL</li>
+                        <li>Business Intelligence</li>
+                        <li>Big Data Processing</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Tìm hiểu thêm →</a>
+                </div>
+
+                <!-- AI Solutions -->
+                <div class="service-card featured">
+                    <div class="featured-badge">Phổ biến</div>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                            <line x1="12" y1="22.08" x2="12" y2="12"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">AI & Machine Learning</h3>
+                    <p class="service-description">
+                        Ứng dụng trí tuệ nhân tạo và học máy vào doanh nghiệp, từ chatbot thông minh, 
+                        nhận diện hình ảnh, xử lý ngôn ngữ tự nhiên đến dự đoán và tự động hóa.
+                    </p>
+                    <ul class="service-features">
+                        <li>Machine Learning Models</li>
+                        <li>Natural Language Processing</li>
+                        <li>Computer Vision</li>
+                        <li>AI Chatbots & Automation</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Tìm hiểu thêm →</a>
+                </div>
+
+                <!-- Web Development -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21"/>
+                            <line x1="12" y1="17" x2="12" y2="21"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Web Development</h3>
+                    <p class="service-description">
+                        Thiết kế và phát triển website chuyên nghiệp, responsive, tối ưu SEO, 
+                        từ landing page, website doanh nghiệp đến hệ thống web phức tạp.
+                    </p>
+                    <ul class="service-features">
+                        <li>Responsive Web Design</li>
+                        <li>E-commerce Solutions</li>
+                        <li>CMS & Web Applications</li>
+                        <li>SEO Optimization</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Tìm hiểu thêm →</a>
+                </div>
+
+                <!-- App Development -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                            <line x1="12" y1="18" x2="12.01" y2="18"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">App Development</h3>
+                    <p class="service-description">
+                        Phát triển ứng dụng di động đa nền tảng (iOS, Android) với trải nghiệm người dùng 
+                        tối ưu, hiệu năng cao và tích hợp công nghệ hiện đại.
+                    </p>
+                    <ul class="service-features">
+                        <li>iOS & Android Apps</li>
+                        <li>Cross-platform Development</li>
+                        <li>UI/UX Design</li>
+                        <li>App Maintenance & Support</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Tìm hiểu thêm →</a>
+                </div>
+            </div>
+
+            <!-- Comprehensive Services -->
+            <div class="comprehensive-services">
+                <h3>Dịch vụ toàn diện</h3>
+                <div class="services-list">
+                    <div class="service-item">
+                        <span class="check-icon">✓</span>
+                        <span>Tư vấn chiến lược công nghệ</span>
+                    </div>
+                    <div class="service-item">
+                        <span class="check-icon">✓</span>
+                        <span>Chuyển đổi số doanh nghiệp</span>
+                    </div>
+                    <div class="service-item">
+                        <span class="check-icon">✓</span>
+                        <span>Bảo trì và hỗ trợ 24/7</span>
+                    </div>
+                    <div class="service-item">
+                        <span class="check-icon">✓</span>
+                        <span>Đào tạo và chuyển giao công nghệ</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact/Form Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Liên hệ với chúng tôi</h2>
+                <p class="section-subtitle">Để lại thông tin, chúng tôi sẽ liên hệ ngay</p>
+            </div>
+            
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>DevAll Digitalise Solutions</h3>
+                    <div class="info-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        <span>Việt Nam</span>
+                    </div>
+                    <div class="info-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                        <span>+84 XXX XXX XXX</span>
+                    </div>
+                    <div class="info-item">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                        <span>contact@devall.vn</span>
+                    </div>
+                    
+                    <div class="cta-boxes">
+                        <div class="cta-box">
+                            <h4>📦 Đặt hàng</h4>
+                            <p>Đặt hàng dịch vụ ngay hôm nay</p>
+                        </div>
+                        <div class="cta-box">
+                            <h4>💡 Tư vấn</h4>
+                            <p>Nhận tư vấn miễn phí</p>
+                        </div>
+                        <div class="cta-box">
+                            <h4>📅 Đặt lịch</h4>
+                            <p>Đặt lịch hẹn gặp trực tiếp</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contact-form" action="https://formsubmit.co/your-email@example.com" method="POST">
+                        <!-- FormSubmit Configuration -->
+                        <input type="hidden" name="_subject" value="Liên hệ mới từ DevAll Website">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        
+                        <div class="form-group">
+                            <label for="name">Họ và tên <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" required placeholder="Nguyễn Văn A">
+                            <span class="error-message" id="name-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required placeholder="example@email.com">
+                            <span class="error-message" id="email-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Số điện thoại <span class="required">*</span></label>
+                            <input type="tel" id="phone" name="phone" required placeholder="0901234567">
+                            <span class="error-message" id="phone-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Dịch vụ quan tâm</label>
+                            <select id="service" name="service">
+                                <option value="">Chọn dịch vụ</option>
+                                <option value="data">Data Solutions</option>
+                                <option value="ai">AI & Machine Learning</option>
+                                <option value="web">Web Development</option>
+                                <option value="app">App Development</option>
+                                <option value="other">Khác</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Nội dung yêu cầu <span class="required">*</span></label>
+                            <textarea id="message" name="message" required rows="5" placeholder="Mô tả chi tiết yêu cầu của bạn..."></textarea>
+                            <span class="error-message" id="message-error"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span class="btn-text">Gửi yêu cầu</span>
+                            <span class="btn-loading">Đang gửi...</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>DevAll Digitalise Solutions</h3>
+                    <p>Your vision is the start of market leadership</p>
+                    <p class="footer-description">
+                        Đối tác công nghệ đáng tin cậy, mang đến các giải pháp chuyển đổi số 
+                        toàn diện cho doanh nghiệp.
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Dịch vụ</h4>
+                    <ul>
+                        <li><a href="#services">Data Solutions</a></li>
+                        <li><a href="#services">AI & Machine Learning</a></li>
+                        <li><a href="#services">Web Development</a></li>
+                        <li><a href="#services">App Development</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Công ty</h4>
+                    <ul>
+                        <li><a href="#about">Về chúng tôi</a></li>
+                        <li><a href="#services">Dịch vụ</a></li>
+                        <li><a href="#contact">Liên hệ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Liên hệ</h4>
+                    <ul class="contact-list">
+                        <li>Email: contact@devall.vn</li>
+                        <li>Phone: +84 XXX XXX XXX</li>
+                        <li>Địa chỉ: Việt Nam</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 DevAll Digitalise Solutions. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/components/navigation.js"></script>
+    <script src="js/components/animations.js"></script>
+    <script src="js/components/form-handler.js"></script>
+    <script src="js/utils/validators.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

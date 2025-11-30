@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+:root {
+  --maple-red: #DC2626;
+  --maple-dark: #B91C1C;
+  --maple-light: #EF4444;
+  --maple-cream: 255 248 240;
+}
+
+@theme inline {
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-poppins);
+}
+
+body {
+  background: #ffffff;
+  color: #171717;
+  font-family: var(--font-inter), Arial, sans-serif;
+}
+
+/* Maple Gradient */
+.bg-maple-gradient {
+  background: linear-gradient(135deg, #DC2626 0%, #B91C1C 100%);
+}
+
+/* Maple Leaf SVG Pattern */
+.maple-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 10l2 8h8l-6 5 2 8-6-5-6 5 2-8-6-5h8z' fill='rgba(220,38,38,0.03)' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
+
+/* Glass Effect */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(12px);
+}
+
+/* Maple Shadow */
+.maple-shadow {
+  box-shadow: 0 10px 40px rgba(255, 0, 0, 0.15);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #FF0000 0%, #D32F2F 100%);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D32F2F;
+}
+
+/* Selection Color */
+::selection {
+  background-color: rgba(255, 0, 0, 0.2);
+  color: #D32F2F;
+}
+
+/* Navigation Link Styles */
+.nav-link {
+  position: relative;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #DC2626;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
