@@ -2,7 +2,19 @@
 
 ## 🚀 Quick Deploy to Vercel (Recommended)
 
-### Method 1: Using Vercel Dashboard (Easiest)
+### Method 1: One-Click Deploy Button
+
+**Fastest way - Just click the button!**
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FNLPQuy%2FDevAll&project-name=devall-website&repository-name=DevAll&root-directory=devall-nextjs)
+
+This will:
+- ✅ Clone your repository
+- ✅ Auto-detect Next.js framework
+- ✅ Configure build settings automatically
+- ✅ Deploy in ~3 minutes
+
+### Method 2: Using Vercel Dashboard (Manual)
 
 1. **Push code to GitHub** (already done ✅)
 
