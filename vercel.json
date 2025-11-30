@@ -1,18 +1,10 @@
 {
-  "buildCommand": "npm run build",
-  "devCommand": "npm run dev",
-  "installCommand": "npm install",
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "cd devall-nextjs && npm run build",
+  "devCommand": "cd devall-nextjs && npm run dev",
+  "installCommand": "cd devall-nextjs && npm install",
   "framework": "nextjs",
-  "outputDirectory": ".next",
-  "regions": ["sin1", "sfo1"],
-  "env": {
-    "NEXT_PUBLIC_SITE_URL": "https://devall.vercel.app"
-  },
-  "build": {
-    "env": {
-      "NODE_VERSION": "20"
-    }
-  },
+  "outputDirectory": "devall-nextjs/.next",
   "headers": [
     {
       "source": "/(.*)",

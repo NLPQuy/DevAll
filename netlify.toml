@@ -1,12 +1,15 @@
 # Netlify Configuration for Next.js 16
-# https://docs.netlify.com/integrations/frameworks/next-js/
+# Project is in devall-nextjs subfolder
 
 [build]
+  # Base directory where package.json is located
+  base = "devall-nextjs"
+  
   # Build command
   command = "npm run build"
   
-  # Publish directory (Next.js outputs to .next)
-  publish = ".next"
+  # Publish directory (relative to base)
+  publish = "devall-nextjs/.next"
 
 [build.environment]
   # Node version
@@ -28,14 +31,10 @@
 # EMAIL_TO
 # NEXT_PUBLIC_SITE_URL
 
-# Ignore build for specific branches (optional)
-# [context.deploy-preview]
-#   command = "npm run build"
-
 # Production context
 [context.production]
   command = "npm run build"
-  publish = ".next"
+  publish = "devall-nextjs/.next"
 
 # Deploy preview context
 [context.deploy-preview]
