@@ -1,0 +1,46 @@
+# Netlify Configuration for Next.js 16
+# https://docs.netlify.com/integrations/frameworks/next-js/
+
+[build]
+  # Build command
+  command = "npm run build"
+  
+  # Publish directory (Next.js outputs to .next)
+  publish = ".next"
+
+[build.environment]
+  # Node version
+  NODE_VERSION = "20"
+  
+  # Enable Next.js Runtime
+  NEXT_PRIVATE_TARGET = "server"
+
+# Next.js Runtime Plugin (Essential for Next.js on Netlify)
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+# Redirects and Headers are handled by Next.js
+# No need for manual _redirects file
+
+# Environment variables (configure in Netlify dashboard)
+# RESEND_API_KEY
+# EMAIL_FROM
+# EMAIL_TO
+# NEXT_PUBLIC_SITE_URL
+
+# Ignore build for specific branches (optional)
+# [context.deploy-preview]
+#   command = "npm run build"
+
+# Production context
+[context.production]
+  command = "npm run build"
+  publish = ".next"
+
+# Deploy preview context
+[context.deploy-preview]
+  command = "npm run build"
+
+# Branch deploy context
+[context.branch-deploy]
+  command = "npm run build"
