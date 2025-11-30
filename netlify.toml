@@ -8,15 +8,12 @@
   # Build command
   command = "npm run build"
   
-  # Publish directory (relative to base)
-  publish = "devall-nextjs/.next"
+  # Publish directory (relative to base directory, not repo root)
+  publish = ".next"
 
 [build.environment]
   # Node version
   NODE_VERSION = "20"
-  
-  # Enable Next.js Runtime
-  NEXT_PRIVATE_TARGET = "server"
 
 # Next.js Runtime Plugin (Essential for Next.js on Netlify)
 [[plugins]]
@@ -34,7 +31,6 @@
 # Production context
 [context.production]
   command = "npm run build"
-  publish = "devall-nextjs/.next"
 
 # Deploy preview context
 [context.deploy-preview]
