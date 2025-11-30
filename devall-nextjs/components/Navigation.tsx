@@ -27,14 +27,14 @@ export default function Navigation() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2 group">
-            <div className="w-10 h-10 flex items-center justify-center">
+          <Link href="/" className="flex items-center space-x-1.5 sm:space-x-2 group">
+            <div className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center flex-shrink-0">
               {/* Maple Leaf Logo */}
-              <svg viewBox="0 0 600 600" className="w-10 h-10 fill-red-600 group-hover:scale-110 transition-transform">
+              <svg viewBox="0 0 600 600" className="w-full h-full fill-red-600 group-hover:scale-110 transition-transform">
                 <path d="M300 20l40 120 120-40-40 120 120 40-120 40 40 120-120-40-40 120-40-120-120 40 40-120-120-40 120-40-40-120 120 40z"/>
               </svg>
             </div>
-            <span className="text-2xl font-bold font-[family-name:var(--font-poppins)] bg-gradient-to-r from-red-600 to-red-700 bg-clip-text text-transparent">
+            <span className="text-xl sm:text-2xl font-bold font-[family-name:var(--font-poppins)] bg-gradient-to-r from-red-600 to-red-700 bg-clip-text text-transparent whitespace-nowrap">
               DevAll
             </span>
           </Link>
@@ -63,13 +63,13 @@ export default function Navigation() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden p-2 text-red-600"
+            className="md:hidden p-2 text-red-600 hover:bg-red-50 rounded-lg transition-colors"
           >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2.5}>
               {isMobileMenuOpen ? (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
               ) : (
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
               )}
             </svg>
           </button>

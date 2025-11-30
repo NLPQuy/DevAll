@@ -9,9 +9,9 @@ export default function Hero() {
       {/* Maple Pattern Background */}
       <div className="absolute inset-0 maple-pattern opacity-10" />
       
-      {/* Maple Leaf Decorations */}
+      {/* Maple Leaf Decorations - Hidden on mobile */}
       <motion.div 
-        className="absolute top-20 left-10 opacity-10"
+        className="absolute top-20 left-10 opacity-10 hidden md:block"
         animate={{
           y: [0, 20, 0],
           rotate: [0, 10, 0],
@@ -27,7 +27,7 @@ export default function Hero() {
         </svg>
       </motion.div>
       <motion.div 
-        className="absolute bottom-20 right-10 opacity-10"
+        className="absolute bottom-20 right-10 opacity-10 hidden md:block"
         animate={{
           y: [0, -20, 0],
           rotate: [0, -10, 0],
@@ -44,11 +44,11 @@ export default function Hero() {
         </svg>
       </motion.div>
 
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center max-w-5xl mx-auto">
           {/* Animated Maple Logo */}
           <motion.div 
-            className="mb-8 flex justify-center"
+            className="mb-6 md:mb-8 flex justify-center"
             initial={{ scale: 0, rotate: -180 }}
             animate={{ scale: 1, rotate: 0 }}
             transition={{ 
@@ -60,10 +60,10 @@ export default function Hero() {
           >
             <div className="relative">
               <motion.svg 
-                width="150" 
-                height="150" 
+                width="100" 
+                height="100" 
                 viewBox="0 0 600 600" 
-                className="fill-red-600 drop-shadow-2xl"
+                className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 fill-red-600 drop-shadow-2xl"
                 animate={{
                   scale: [1, 1.1, 1],
                 }}
@@ -93,7 +93,7 @@ export default function Hero() {
 
           {/* Company Name */}
           <motion.h1 
-            className="text-6xl md:text-8xl font-bold mb-4 font-[family-name:var(--font-poppins)]"
+            className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold mb-3 md:mb-4 font-[family-name:var(--font-poppins)] px-4"
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
@@ -104,23 +104,23 @@ export default function Hero() {
           </motion.h1>
           
           <motion.p 
-            className="text-xl md:text-2xl text-gray-700 mb-6 font-medium tracking-wide flex items-center justify-center gap-2"
+            className="text-lg sm:text-xl md:text-2xl text-gray-700 mb-4 md:mb-6 font-medium tracking-wide flex items-center justify-center gap-2 px-4"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.5 }}
           >
-            Digitalise Solutions <Leaf className="w-6 h-6 text-red-600 inline-block" />
+            Digitalise Solutions <Leaf className="w-5 h-5 sm:w-6 sm:h-6 text-red-600 inline-block" />
           </motion.p>
 
           {/* Slogan */}
           <motion.div 
-            className="mb-12"
+            className="mb-8 md:mb-12 px-4"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.7 }}
           >
-            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-              Your vision is the start of <br />
+            <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-gray-900 mb-4 md:mb-6 leading-tight">
+              Your vision is the start of <br className="hidden sm:block" />
               <span className="bg-gradient-to-r from-red-600 to-red-700 bg-clip-text text-transparent">market leadership...</span>
             </h2>
             <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
