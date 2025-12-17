@@ -31,12 +31,12 @@
 
 # Production context
 [context.production]
-  command = "npm run build"
+  command = "npm ci && npm run build"
 
 # Deploy preview context
 [context.deploy-preview]
-  command = "npm run build"
+  command = "npm ci && npm run build"
 
 # Branch deploy context
 [context.branch-deploy]
-  command = "npm run build"
+  command = "npm ci && npm run build"
