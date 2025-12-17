@@ -5,8 +5,8 @@
   # Base directory where package.json is located
   base = "devall-nextjs"
   
-  # Build command
-  command = "npm run build"
+  # Install command - explicitly install dependencies
+  command = "npm ci && npm run build"
   
   # Publish directory - managed by Netlify Next.js plugin
   publish = ".next"
