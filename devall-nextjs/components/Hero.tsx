@@ -5,7 +5,7 @@ import { Package, Lightbulb, Calendar, ArrowRight, ChevronDown, Leaf } from 'luc
 
 export default function Hero() {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-white via-red-50 to-white">
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-white via-gray-50 to-white">
       {/* Maple Pattern Background */}
       <div className="absolute inset-0 maple-pattern opacity-10" />
       
@@ -22,7 +22,7 @@ export default function Hero() {
           ease: "easeInOut",
         }}
       >
-        <svg width="120" height="120" viewBox="0 0 600 600" className="fill-red-600">
+        <svg width="120" height="120" viewBox="0 0 600 600" className="fill-gray-700">
           <path d="M300 20l40 120 120-40-40 120 120 40-120 40 40 120-120-40-40 120-40-120-120 40 40-120-120-40 120-40-40-120 120 40z"/>
         </svg>
       </motion.div>
@@ -39,7 +39,7 @@ export default function Hero() {
           delay: 2,
         }}
       >
-        <svg width="150" height="150" viewBox="0 0 600 600" className="fill-red-600">
+        <svg width="150" height="150" viewBox="0 0 600 600" className="fill-gray-700">
           <path d="M300 20l40 120 120-40-40 120 120 40-120 40 40 120-120-40-40 120-40-120-120 40 40-120-120-40 120-40-40-120 120 40z"/>
         </svg>
       </motion.div>
@@ -63,7 +63,7 @@ export default function Hero() {
                 width="100" 
                 height="100" 
                 viewBox="0 0 600 600" 
-                className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 fill-red-600 drop-shadow-2xl"
+                className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 fill-gray-800 drop-shadow-2xl"
                 animate={{
                   scale: [1, 1.1, 1],
                 }}
@@ -75,9 +75,9 @@ export default function Hero() {
               >
                 <path d="M300 20l40 120 120-40-40 120 120 40-120 40 40 120-120-40-40 120-40-120-120 40 40-120-120-40 120-40-40-120 120 40z"/>
               </motion.svg>
-              {/* Red circle behind */}
+              {/* Gray circle behind */}
               <motion.div 
-                className="absolute inset-0 -z-10 bg-red-600 rounded-full blur-3xl opacity-20"
+                className="absolute inset-0 -z-10 bg-gray-700 rounded-full blur-3xl opacity-20"
                 animate={{
                   scale: [1, 1.2, 1],
                   opacity: [0.2, 0.3, 0.2],
@@ -98,7 +98,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
           >
-            <span className="bg-gradient-to-r from-red-600 to-red-700 bg-clip-text text-transparent drop-shadow-lg">
+            <span className="bg-gradient-to-r from-gray-800 to-black bg-clip-text text-transparent drop-shadow-lg">
               DevAll
             </span>
           </motion.h1>
@@ -109,7 +109,7 @@ export default function Hero() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.5 }}
           >
-            Digitalise Solutions <Leaf className="w-5 h-5 sm:w-6 sm:h-6 text-red-600 inline-block" />
+            Digitalise Solutions <Leaf className="w-5 h-5 sm:w-6 sm:h-6 text-gray-800 inline-block" />
           </motion.p>
 
           {/* Slogan */}
@@ -121,7 +121,7 @@ export default function Hero() {
           >
             <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-gray-900 mb-4 md:mb-6 leading-tight">
               Your vision is the start of <br className="hidden sm:block" />
-              <span className="bg-gradient-to-r from-red-600 to-red-700 bg-clip-text text-transparent">market leadership...</span>
+              <span className="bg-gradient-to-r from-gray-800 to-black bg-clip-text text-transparent">market leadership...</span>
             </h2>
             <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               We transform your vision into reality with advanced technology solutions, delivered with Canadian professionalism and international excellence.
@@ -139,7 +139,7 @@ export default function Hero() {
               href="#contact"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="px-8 py-4 bg-gradient-to-r from-red-600 to-red-700 text-white rounded-xl font-bold text-lg shadow-lg flex items-center space-x-2 group"
+              className="px-8 py-4 bg-gradient-to-r from-gray-800 to-black text-white rounded-xl font-bold text-lg shadow-lg flex items-center space-x-2 group"
             >
               <Calendar className="w-5 h-5" />
               <span>Book Consultation</span>
@@ -147,9 +147,9 @@ export default function Hero() {
             </motion.a>
             <motion.a
               href="#services"
-              whileHover={{ scale: 1.05, backgroundColor: 'rgb(220, 38, 38)', color: 'white' }}
+              whileHover={{ scale: 1.05, backgroundColor: 'rgb(31, 41, 55)', color: 'white' }}
               whileTap={{ scale: 0.95 }}
-              className="px-8 py-4 bg-white text-red-600 border-2 border-red-600 rounded-xl font-bold text-lg transition-all"
+              className="px-8 py-4 bg-white text-gray-800 border-2 border-gray-800 rounded-xl font-bold text-lg transition-all"
             >
               Explore Services
             </motion.a>
@@ -163,9 +163,9 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 1.1 }}
           >
             {[
-              { icon: Package, title: 'Order', desc: 'Order services', color: 'from-red-600 to-red-700' },
-              { icon: Lightbulb, title: 'Consult', desc: 'Free consultation', color: 'from-red-700 to-red-800' },
-              { icon: Calendar, title: 'Book Meeting', desc: 'In-person meeting', color: 'from-red-600 to-red-700' },
+              { icon: Package, title: 'Order', desc: 'Order services', color: 'from-gray-800 to-black' },
+              { icon: Lightbulb, title: 'Consult', desc: 'Free consultation', color: 'from-gray-700 to-gray-900' },
+              { icon: Calendar, title: 'Book Meeting', desc: 'In-person meeting', color: 'from-gray-800 to-black' },
             ].map((item, index) => {
               const Icon = item.icon;
               return (
@@ -198,8 +198,9 @@ export default function Hero() {
             animate={{ y: [0, 10, 0] }}
             transition={{ duration: 2, repeat: Infinity }}
             aria-label="Scroll to About section"
+            suppressHydrationWarning
           >
-            <ChevronDown className="w-6 h-6 mx-auto text-red-600" />
+            <ChevronDown className="w-6 h-6 mx-auto text-gray-800" />
           </motion.button>
         </div>
       </div>

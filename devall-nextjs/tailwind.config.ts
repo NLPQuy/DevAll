@@ -9,22 +9,22 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Canadian Maple Theme
+        // Canadian Maple Theme - Black & White
         maple: {
-          red: '#FF0000',      // Canada Flag Red
-          dark: '#D32F2F',     // Dark Maple Red
-          light: '#FF6B6B',    // Light Maple Red
-          cream: '#FFF8F0',    // Maple Cream
+          black: '#1F2937',    // Maple Black
+          dark: '#111827',     // Dark Maple Black
+          light: '#374151',    // Light Maple Gray
+          cream: '#FFFFFF',    // Maple White
         },
         canadian: {
           white: '#FFFFFF',
-          red: '#FF0000',
+          black: '#1F2937',
           border: '#E5E5E5',
         },
       },
       backgroundImage: {
-        'maple-gradient': 'linear-gradient(135deg, #FF0000 0%, #D32F2F 100%)',
-        'maple-radial': 'radial-gradient(circle, rgba(255,0,0,0.1) 0%, rgba(211,47,47,0.05) 100%)',
+        'maple-gradient': 'linear-gradient(135deg, #1F2937 0%, #111827 100%)',
+        'maple-radial': 'radial-gradient(circle, rgba(31,41,55,0.1) 0%, rgba(17,24,39,0.05) 100%)',
       },
       animation: {
         'float': 'float 6s ease-in-out infinite',

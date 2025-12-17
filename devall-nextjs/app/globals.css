@@ -1,10 +1,10 @@
 @import "tailwindcss";
 
 :root {
-  --maple-red: #DC2626;
-  --maple-dark: #B91C1C;
-  --maple-light: #EF4444;
-  --maple-cream: 255 248 240;
+  --maple-black: #1F2937;
+  --maple-dark: #111827;
+  --maple-light: #374151;
+  --maple-cream: 255 255 255;
 }
 
 @theme inline {
@@ -20,12 +20,12 @@ body {
 
 /* Maple Gradient */
 .bg-maple-gradient {
-  background: linear-gradient(135deg, #DC2626 0%, #B91C1C 100%);
+  background: linear-gradient(135deg, #1F2937 0%, #111827 100%);
 }
 
 /* Maple Leaf SVG Pattern */
 .maple-pattern {
-  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 10l2 8h8l-6 5 2 8-6-5-6 5 2-8-6-5h8z' fill='rgba(220,38,38,0.03)' fill-rule='evenodd'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 10l2 8h8l-6 5 2 8-6-5-6 5 2-8-6-5h8z' fill='rgba(31,41,55,0.03)' fill-rule='evenodd'/%3E%3C/svg%3E");
 }
 
 /* Glass Effect */
@@ -36,7 +36,7 @@ body {
 
 /* Maple Shadow */
 .maple-shadow {
-  box-shadow: 0 10px 40px rgba(255, 0, 0, 0.15);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
 }
 
 /* Custom Scrollbar */
@@ -49,18 +49,18 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #FF0000 0%, #D32F2F 100%);
+  background: linear-gradient(180deg, #1F2937 0%, #111827 100%);
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #D32F2F;
+  background: #111827;
 }
 
 /* Selection Color */
 ::selection {
-  background-color: rgba(255, 0, 0, 0.2);
-  color: #D32F2F;
+  background-color: rgba(31, 41, 55, 0.2);
+  color: #111827;
 }
 
 /* Navigation Link Styles */
@@ -77,7 +77,7 @@ body {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #DC2626;
+  background-color: #1F2937;
   transition: width 0.3s ease;
 }
 

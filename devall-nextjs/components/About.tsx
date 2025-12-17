@@ -11,20 +11,20 @@ export default function About() {
           {/* Section Header */}
           <div className="mb-12">
             <div className="flex justify-center mb-4">
-              <Leaf className="w-16 h-16 text-red-600 opacity-80" />
+              <Leaf className="w-16 h-16 text-gray-800 opacity-80" />
             </div>
             <h2 className="text-4xl md:text-5xl font-bold mb-4 font-[family-name:var(--font-poppins)] text-gray-900">
-              About <span className="bg-gradient-to-r from-red-600 to-red-700 bg-clip-text text-transparent">DevAll</span>
+              About <span className="bg-gradient-to-r from-gray-800 to-black bg-clip-text text-transparent">DevAll</span>
             </h2>
             <p className="text-xl text-gray-600 flex items-center justify-center gap-2">
-              Your Trusted Technology Partner <Leaf className="w-5 h-5 text-red-600 inline-block" />
+              Your Trusted Technology Partner <Leaf className="w-5 h-5 text-gray-800 inline-block" />
             </p>
           </div>
 
           {/* Content */}
           <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
             <p className="text-xl font-medium">
-              <span className="text-red-600 font-bold">DevAll Digitalise Solutions</span> is a pioneering provider 
+              <span className="text-gray-800 font-bold">DevAll Digitalise Solutions</span> is a pioneering provider 
               of comprehensive digital transformation solutions with international-grade quality, 
               embodying Canadian professionalism and reliability.
             </p>
@@ -49,7 +49,7 @@ export default function About() {
               { number: '100%', label: 'Quality Commitment' },
             ].map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="text-4xl font-bold bg-gradient-to-r from-red-600 to-red-700 bg-clip-text text-transparent mb-2">
+                <div className="text-4xl font-bold bg-gradient-to-r from-gray-800 to-black bg-clip-text text-transparent mb-2">
                   {stat.number}
                 </div>
                 <div className="text-gray-600">{stat.label}</div>

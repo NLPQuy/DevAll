@@ -30,11 +30,11 @@ export default function Navigation() {
           <Link href="/" className="flex items-center space-x-1.5 sm:space-x-2 group">
             <div className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center flex-shrink-0">
               {/* Maple Leaf Logo */}
-              <svg viewBox="0 0 600 600" className="w-full h-full fill-red-600 group-hover:scale-110 transition-transform">
+              <svg viewBox="0 0 600 600" className="w-full h-full fill-gray-800 group-hover:scale-110 transition-transform">
                 <path d="M300 20l40 120 120-40-40 120 120 40-120 40 40 120-120-40-40 120-40-120-120 40 40-120-120-40 120-40-40-120 120 40z"/>
               </svg>
             </div>
-            <span className="text-xl sm:text-2xl font-bold font-[family-name:var(--font-poppins)] bg-gradient-to-r from-red-600 to-red-700 bg-clip-text text-transparent whitespace-nowrap">
+            <span className="text-xl sm:text-2xl font-bold font-[family-name:var(--font-poppins)] bg-gradient-to-r from-gray-800 to-black bg-clip-text text-transparent whitespace-nowrap">
               DevAll
             </span>
           </Link>
@@ -48,13 +48,13 @@ export default function Navigation() {
               { label: 'Contact', href: '#contact' }
             ].map((item) => (
               <motion.div key={item.label} whileHover={{ y: -2 }} whileTap={{ scale: 0.95 }}>
-                <Link href={item.href} className="nav-link text-gray-700 hover:text-red-600">
+                <Link href={item.href} className="nav-link text-gray-700 hover:text-gray-900">
                   {item.label}
                 </Link>
               </motion.div>
             ))}
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <Link href="#contact" className="px-6 py-2.5 bg-gradient-to-r from-red-600 to-red-700 text-white rounded-lg font-medium shadow-lg">
+              <Link href="#contact" className="px-6 py-2.5 bg-gradient-to-r from-gray-800 to-black text-white rounded-lg font-medium shadow-lg">
                 Book Consultation
               </Link>
             </motion.div>
@@ -63,7 +63,7 @@ export default function Navigation() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden p-2 text-red-600 hover:bg-red-50 rounded-lg transition-colors"
+            className="md:hidden p-2 text-gray-800 hover:bg-gray-100 rounded-lg transition-colors"
           >
             <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2.5}>
               {isMobileMenuOpen ? (
@@ -95,7 +95,7 @@ export default function Navigation() {
                   >
                     <Link 
                       href={`#${item.toLowerCase()}`}
-                      className="py-2 hover:text-red-600 transition-colors block text-gray-700"
+                      className="py-2 hover:text-gray-900 transition-colors block text-gray-700"
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       {item}
@@ -109,7 +109,7 @@ export default function Navigation() {
                 >
                   <Link 
                     href="#contact" 
-                    className="py-2.5 bg-gradient-to-r from-red-600 to-red-700 text-white rounded-lg text-center font-medium block"
+                    className="py-2.5 bg-gradient-to-r from-gray-800 to-black text-white rounded-lg text-center font-medium block"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     Book Consultation

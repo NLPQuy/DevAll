@@ -15,7 +15,7 @@ const services = [
       'Business Intelligence',
       'Big Data Processing',
     ],
-    color: 'from-red-600 to-red-700',
+    color: 'from-gray-800 to-black',
   },
   {
     icon: Bot,
@@ -27,7 +27,7 @@ const services = [
       'Computer Vision',
       'AI Chatbots & Automation',
     ],
-    color: 'from-red-700 to-red-800',
+    color: 'from-gray-700 to-gray-900',
     featured: true,
   },
   {
@@ -40,7 +40,7 @@ const services = [
       'CMS & Web Applications',
       'SEO Optimization',
     ],
-    color: 'from-red-600 to-red-700',
+    color: 'from-gray-800 to-black',
   },
   {
     icon: Smartphone,
@@ -52,7 +52,7 @@ const services = [
       'UI/UX Design',
       'App Maintenance & Support',
     ],
-    color: 'from-red-700 to-red-800',
+    color: 'from-gray-700 to-gray-900',
   },
 ];
 
@@ -85,7 +85,7 @@ export default function Services() {
   };
 
   return (
-    <section id="services" className="py-20 bg-gradient-to-b from-red-50 to-white relative overflow-hidden">
+    <section id="services" className="py-20 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
       {/* Maple leaves decoration */}
       <motion.div 
         className="absolute top-10 left-10 opacity-5"
@@ -99,7 +99,7 @@ export default function Services() {
           ease: "easeInOut",
         }}
       >
-        <svg width="200" height="200" viewBox="0 0 600 600" className="fill-red-600">
+        <svg width="200" height="200" viewBox="0 0 600 600" className="fill-gray-700">
           <path d="M300 20l40 120 120-40-40 120 120 40-120 40 40 120-120-40-40 120-40-120-120 40 40-120-120-40 120-40-40-120 120 40z"/>
         </svg>
       </motion.div>
@@ -113,10 +113,10 @@ export default function Services() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4 font-[family-name:var(--font-poppins)]">
-            Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-red-700">Services</span>
+            Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-800 to-black">Services</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto flex items-center justify-center gap-2">
-            Comprehensive technology solutions with professional Canadian style <Leaf className="w-5 h-5 text-red-600 inline-block" />
+            Comprehensive technology solutions with professional Canadian style <Leaf className="w-5 h-5 text-gray-800 inline-block" />
           </p>
         </motion.div>
 
@@ -132,24 +132,24 @@ export default function Services() {
               key={index}
               variants={itemVariants}
               whileHover={{ y: -8, scale: 1.02 }}
-              className={`group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-transparent hover:border-maple-red ${
-                service.featured ? 'ring-2 ring-maple-red' : ''
+              className={`group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-transparent hover:border-gray-800 ${
+                service.featured ? 'ring-2 ring-gray-800' : ''
               }`}
             >
               {/* Featured Badge */}
               {service.featured && (
-                <div className="absolute -top-3 -right-3 bg-maple-gradient text-white px-4 py-1 rounded-full text-sm font-bold shadow-lg flex items-center gap-1">
+                <div className="absolute -top-3 -right-3 bg-gradient-to-r from-gray-800 to-black text-white px-4 py-1 rounded-full text-sm font-bold shadow-lg flex items-center gap-1">
                   <Leaf className="w-4 h-4" /> Popular
                 </div>
               )}
 
               {/* Icon */}
               <div className="mb-4 group-hover:scale-110 transition-transform">
-                <service.icon className="w-16 h-16 text-red-600" />
+                <service.icon className="w-16 h-16 text-gray-800" />
               </div>
 
               {/* Title */}
-              <h3 className="text-2xl font-bold mb-3 font-[family-name:var(--font-poppins)] group-hover:text-maple-red transition-colors">
+              <h3 className="text-2xl font-bold mb-3 font-[family-name:var(--font-poppins)] group-hover:text-gray-900 transition-colors">
                 {service.title}
               </h3>
 
@@ -162,7 +162,7 @@ export default function Services() {
               <ul className="space-y-2 mb-6">
                 {service.features.map((feature, i) => (
                   <li key={i} className="flex items-start space-x-2 text-sm text-gray-700">
-                    <svg className="w-5 h-5 text-maple-red flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                    <svg className="w-5 h-5 text-gray-800 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
                       <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                     </svg>
                     <span>{feature}</span>
@@ -173,7 +173,7 @@ export default function Services() {
               {/* CTA Link */}
               <a
                 href="#contact"
-                className="inline-flex items-center text-maple-red font-semibold group-hover:translate-x-2 transition-transform"
+                className="inline-flex items-center text-gray-800 font-semibold group-hover:translate-x-2 transition-transform"
               >
                 Learn more
                 <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -185,7 +185,7 @@ export default function Services() {
         </motion.div>
 
         {/* Comprehensive Services */}
-        <div className="bg-gradient-to-r from-red-600 to-red-700 text-white rounded-3xl p-12 text-center shadow-2xl">
+        <div className="bg-gradient-to-r from-gray-800 to-black text-white rounded-3xl p-12 text-center shadow-2xl">
           <h3 className="text-3xl font-bold mb-8 font-[family-name:var(--font-poppins)] flex items-center justify-center gap-2">
             <Leaf className="w-8 h-8" /> Comprehensive Services
           </h3>

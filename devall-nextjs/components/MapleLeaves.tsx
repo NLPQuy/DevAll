@@ -76,9 +76,9 @@ export default function MapleLeaves() {
             width={leaf.size}
             height={leaf.size}
             viewBox="0 0 24 24"
-            className="fill-red-600"
+            className="fill-gray-700"
             style={{
-              filter: 'drop-shadow(0 2px 6px rgba(220, 38, 38, 0.3))',
+              filter: 'drop-shadow(0 2px 6px rgba(31, 41, 55, 0.3))',
             }}
           >
             {/* More detailed maple leaf path */}

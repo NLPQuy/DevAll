@@ -82,17 +82,17 @@ export default function Contact() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4 font-[family-name:var(--font-poppins)] text-gray-900">
-            Contact <span className="bg-gradient-to-r from-red-600 to-red-700 bg-clip-text text-transparent">Us</span>
+            Contact <span className="bg-gradient-to-r from-gray-800 to-black bg-clip-text text-transparent">Us</span>
           </h2>
           <p className="text-xl text-gray-600">
-            Leave your information, we'll contact you right away <Leaf className="w-5 h-5 text-red-600 inline-block ml-1" />
+            Leave your information, we'll contact you right away <Leaf className="w-5 h-5 text-gray-800 inline-block ml-1" />
           </p>
         </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Contact Info */}
           <motion.div 
-            className="bg-gradient-to-br from-red-600 to-red-700 rounded-3xl p-10 text-white shadow-2xl"
+            className="bg-gradient-to-br from-gray-800 to-black text-white rounded-3xl p-10 shadow-2xl"
             initial={{ opacity: 0, x: -50 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -165,39 +165,42 @@ export default function Contact() {
             <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
               <div>
                 <label className="block text-gray-700 font-semibold mb-2">
-                  Full Name <span className="text-red-600">*</span>
+                  Full Name <span className="text-gray-800">*</span>
                 </label>
                 <input
                   {...register('name')}
                   type="text"
-                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-red-600 focus:outline-none transition-colors"
+                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-gray-800 focus:outline-none transition-colors"
                   placeholder="John Doe"
+                  suppressHydrationWarning
                 />
-                {errors.name && <p className="text-red-600 text-sm mt-1">{errors.name.message}</p>}
+                {errors.name && <p className="text-gray-800 text-sm mt-1">{errors.name.message}</p>}
               </div>
 
               <div>
                 <label className="block text-gray-700 font-semibold mb-2">
-                  Email <span className="text-red-600">*</span>
+                  Email <span className="text-gray-800">*</span>
                 </label>
                 <input
                   {...register('email')}
                   type="email"
-                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-red-600 focus:outline-none transition-colors"
+                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-gray-800 focus:outline-none transition-colors"
                   placeholder="example@email.com"
+                  suppressHydrationWarning
                 />
-                {errors.email && <p className="text-red-600 text-sm mt-1">{errors.email.message}</p>}
+                {errors.email && <p className="text-gray-800 text-sm mt-1">{errors.email.message}</p>}
               </div>
 
               <div>
                 <label className="block text-gray-700 font-semibold mb-2">
-                  Phone <span className="text-red-600">*</span>
+                  Phone <span className="text-gray-800">*</span>
                 </label>
                 <input
                   {...register('phone')}
                   type="tel"
-                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-red-600 focus:outline-none transition-colors"
+                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-gray-800 focus:outline-none transition-colors"
                   placeholder="0901234567"
+                  suppressHydrationWarning
                 />
                 {errors.phone && <p className="text-red-600 text-sm mt-1">{errors.phone.message}</p>}
               </div>
@@ -208,7 +211,8 @@ export default function Contact() {
                 </label>
                 <select
                   {...register('service')}
-                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-red-600 focus:outline-none transition-colors"
+                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-gray-800 focus:outline-none transition-colors"
+                  suppressHydrationWarning
                 >
                   <option value="">Select service</option>
                   <option value="data">Data Solutions</option>
@@ -221,13 +225,14 @@ export default function Contact() {
 
               <div>
                 <label className="block text-gray-700 font-semibold mb-2">
-                  Message <span className="text-red-600">*</span>
+                  Message <span className="text-gray-800">*</span>
                 </label>
                 <textarea
                   {...register('message')}
                   rows={5}
-                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-red-600 focus:outline-none transition-colors resize-none"
+                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:border-gray-800 focus:outline-none transition-colors resize-none"
                   placeholder="Describe your requirements in detail..."
+                  suppressHydrationWarning
                 />
                 {errors.message && <p className="text-red-600 text-sm mt-1">{errors.message.message}</p>}
               </div>
@@ -235,7 +240,8 @@ export default function Contact() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full py-4 bg-gradient-to-r from-red-600 to-red-700 text-white font-bold rounded-xl hover:scale-105 transition-transform shadow-lg disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2"
+                className="w-full py-4 bg-gradient-to-r from-gray-800 to-black text-white font-bold rounded-xl hover:scale-105 transition-transform shadow-lg disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2"
+                suppressHydrationWarning
               >
                 {isSubmitting ? (
                   <>
