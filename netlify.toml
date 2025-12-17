@@ -6,7 +6,7 @@
   base = "devall-nextjs"
   
   # Build command
-  command = "npm install && npm run build"
+  command = "npm run build"
   
   # Publish directory - managed by Netlify Next.js plugin
   publish = ".next"
