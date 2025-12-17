@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import { Package, Lightbulb, Calendar, ArrowRight, ChevronDown, Leaf } from 'lucide-react';
 
 export default function Hero() {
@@ -46,7 +47,7 @@ export default function Hero() {
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center max-w-5xl mx-auto">
-          {/* Animated Maple Logo */}
+          {/* Animated Logo */}
           <motion.div 
             className="mb-6 md:mb-8 flex justify-center"
             initial={{ scale: 0, rotate: -180 }}
@@ -59,11 +60,8 @@ export default function Hero() {
             }}
           >
             <div className="relative">
-              <motion.svg 
-                width="100" 
-                height="100" 
-                viewBox="0 0 600 600" 
-                className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 fill-gray-800 drop-shadow-2xl"
+              <motion.div 
+                className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 relative drop-shadow-2xl bg-transparent"
                 animate={{
                   scale: [1, 1.1, 1],
                 }}
@@ -73,8 +71,19 @@ export default function Hero() {
                   ease: "easeInOut",
                 }}
               >
-                <path d="M300 20l40 120 120-40-40 120 120 40-120 40 40 120-120-40-40 120-40-120-120 40 40-120-120-40 120-40-40-120 120 40z"/>
-              </motion.svg>
+                <Image 
+                  src="/logo.jpg" 
+                  alt="DevAll Logo" 
+                  width={160} 
+                  height={160}
+                  className="w-full h-full object-contain"
+                  style={{ 
+                    mixBlendMode: 'darken',
+                    filter: 'contrast(1.2) brightness(1.1)'
+                  }}
+                  priority
+                />
+              </motion.div>
               {/* Gray circle behind */}
               <motion.div 
                 className="absolute inset-0 -z-10 bg-gray-700 rounded-full blur-3xl opacity-20"

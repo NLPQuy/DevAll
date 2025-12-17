@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { Leaf, Heart } from 'lucide-react';
 
 export default function Footer() {
@@ -6,11 +7,15 @@ export default function Footer() {
       {/* Top border with maple gradient */}
       <div className="h-1 bg-gradient-to-r from-gray-800 to-black" />
 
-      {/* Maple leaf watermark */}
+      {/* Logo watermark */}
       <div className="absolute top-10 right-10 opacity-5">
-        <svg width="300" height="300" viewBox="0 0 600 600" className="fill-white">
-          <path d="M300 20l40 120 120-40-40 120 120 40-120 40 40 120-120-40-40 120-40-120-120 40 40-120-120-40 120-40-40-120 120 40z"/>
-        </svg>
+        <Image 
+          src="/logo.jpg" 
+          alt="DevAll Watermark" 
+          width={300} 
+          height={300}
+          className="object-contain brightness-0 invert"
+        />
       </div>
 
       <div className="container mx-auto px-4 py-16 relative z-10">
@@ -18,9 +23,15 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <svg width="40" height="40" viewBox="0 0 600 600" className="fill-gray-700">
-                <path d="M300 20l40 120 120-40-40 120 120 40-120 40 40 120-120-40-40 120-40-120-120 40 40-120-120-40 120-40-40-120 120 40z"/>
-              </svg>
+              <div className="w-10 h-10 relative overflow-hidden">
+                <Image 
+                  src="/logo.jpg" 
+                  alt="DevAll Logo" 
+                  width={40} 
+                  height={40}
+                  className="object-contain brightness-0 invert"
+                />
+              </div>
               <h3 className="text-2xl font-bold">DevAll</h3>
             </div>
             <p className="text-gray-300 mb-4 leading-relaxed">

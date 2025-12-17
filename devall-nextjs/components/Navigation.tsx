@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export default function Navigation() {
@@ -28,11 +29,19 @@ export default function Navigation() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-1.5 sm:space-x-2 group">
-            <div className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center flex-shrink-0">
-              {/* Maple Leaf Logo */}
-              <svg viewBox="0 0 600 600" className="w-full h-full fill-gray-800 group-hover:scale-110 transition-transform">
-                <path d="M300 20l40 120 120-40-40 120 120 40-120 40 40 120-120-40-40 120-40-120-120 40 40-120-120-40 120-40-40-120 120 40z"/>
-              </svg>
+            <div className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center flex-shrink-0 relative overflow-hidden bg-transparent">
+              <Image 
+                src="/logo.jpg" 
+                alt="DevAll Logo" 
+                width={40} 
+                height={40}
+                className="w-full h-full object-contain group-hover:scale-110 transition-transform"
+                style={{ 
+                  mixBlendMode: 'darken',
+                  filter: 'contrast(1.2) brightness(1.1)'
+                }}
+                priority
+              />
             </div>
             <span className="text-xl sm:text-2xl font-bold font-[family-name:var(--font-poppins)] bg-gradient-to-r from-gray-800 to-black bg-clip-text text-transparent whitespace-nowrap">
               DevAll

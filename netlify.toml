@@ -6,14 +6,15 @@
   base = "devall-nextjs"
   
   # Build command
-  command = "npm run build"
+  command = "npm install && npm run build"
   
-  # Publish directory (relative to base directory, not repo root)
+  # Publish directory - managed by Netlify Next.js plugin
   publish = ".next"
 
 [build.environment]
   # Node version
-  NODE_VERSION = "20"
+  NODE_VERSION = "20.11.0"
+  NPM_VERSION = "10.2.4"
 
 # Next.js Runtime Plugin (Essential for Next.js on Netlify)
 [[plugins]]

@@ -84,3 +84,45 @@ body {
 .nav-link:hover::after {
   width: 100%;
 }
+
+/* Logo Styles */
+.logo-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.logo-container::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(31,41,55,0.05) 0%, rgba(17,24,39,0.05) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.logo-container:hover::before {
+  opacity: 1;
+}
+
+/* Remove white background from logo images */
+img[alt*="Logo"],
+img[alt*="logo"] {
+  mix-blend-mode: darken;
+  background: transparent !important;
+}
+
+/* Smooth Image Loading */
+img {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
+/* Enhanced Shadow for Cards */
+.card-shadow {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease;
+}
+
+.card-shadow:hover {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
