@@ -36,10 +36,10 @@ export async function POST(request: Request) {
 
     // Send email to DevAll team
     try {
-      console.log('🔄 Attempting to send email to: nguyenlamphuquykh@gmail.com');
+      console.log('🔄 Attempting to send email to: congchivu9@gmail.com');
       const emailResult = await resend.emails.send({
         from: 'DevAll Contact <onboarding@resend.dev>',
-        to: 'nguyenlamphuquykh@gmail.com',
+        to: 'congchivu9@gmail.com',
         subject: `🔔 New Contact Form - ${name}`,
         html: `
           <!DOCTYPE html>

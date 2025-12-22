@@ -36,10 +36,10 @@ export async function POST(request: Request) {
 
     // Send email to DevAll team
     try {
-      console.log('🔄 Attempting to send email to: nguyenlamphuquykh@gmail.com');
+      console.log('🔄 Attempting to send email to: congchivu9@gmail.com');
       const emailResult = await resend.emails.send({
         from: 'DevAll Booking <onboarding@resend.dev>',
-        to: 'nguyenlamphuquykh@gmail.com',
+        to: 'congchivu9@gmail.com',
         subject: `🔔 New Consultation Booking - ${bookingId}`,
         html: `
           <!DOCTYPE html>
@@ -172,8 +172,8 @@ export async function POST(request: Request) {
                   </div>
                   
                   <p style="margin-top: 20px;">If you have any urgent questions, please contact us at:</p>
-                  <p><strong>Email:</strong> contact@devall.vn<br>
-                  <strong>Phone:</strong> +84 XXX XXX XXX</p>
+                  <p><strong>Email:</strong> philvu@devallsolutions.com<br>
+                  <strong>Phone:</strong> 506-313-1565</p>
                 </div>
                 <div class="footer">
                   <p><strong>DevAll Digitalise Solutions</strong></p>

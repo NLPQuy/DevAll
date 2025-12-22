@@ -114,7 +114,7 @@ export default function Contact() {
                 <Phone className="w-6 h-6 mt-1 flex-shrink-0" />
                 <div>
                   <p className="font-semibold mb-1">Phone</p>
-                  <p className="opacity-90">506-113-1565</p>
+                  <p className="opacity-90">506-313-1565</p>
                 </div>
               </div>
 
