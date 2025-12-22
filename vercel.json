@@ -1,10 +1,11 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "cd devall-nextjs && npm run build",
-  "devCommand": "cd devall-nextjs && npm run dev",
-  "installCommand": "cd devall-nextjs && npm install",
+  "rootDirectory": "devall-nextjs",
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install",
   "framework": "nextjs",
-  "outputDirectory": "devall-nextjs/.next",
+  "outputDirectory": ".next",
   "headers": [
     {
       "source": "/(.*)",
