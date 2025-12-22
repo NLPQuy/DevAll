@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
   reactCompiler: true,
   
   /* Output configuration */
-  output: 'standalone',
+  // output: 'standalone', // Disabled for Vercel deployment
   
   /* Image optimization */
   images: {
