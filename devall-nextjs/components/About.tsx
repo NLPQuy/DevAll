@@ -45,7 +45,7 @@ export default function About() {
             {[
               { number: '50+', label: 'Successful Projects' },
               { number: '30+', label: 'Satisfied Clients' },
-              { number: '10+', label: 'Years Experience' },
+              { number: '2+', label: 'Years Experience' },
               { number: '100%', label: 'Quality Commitment' },
             ].map((stat, index) => (
               <div key={index} className="text-center">

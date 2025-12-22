@@ -106,7 +106,7 @@ export default function Contact() {
                 <MapPin className="w-6 h-6 mt-1 flex-shrink-0" />
                 <div>
                   <p className="font-semibold mb-1">Address</p>
-                  <p className="opacity-90 flex items-center gap-1">Vietnam <Leaf className="w-4 h-4" /></p>
+                  <p className="opacity-90 flex items-center gap-1">Saint John, New Brunswick <Leaf className="w-4 h-4" /></p>
                 </div>
               </div>
 
@@ -114,7 +114,7 @@ export default function Contact() {
                 <Phone className="w-6 h-6 mt-1 flex-shrink-0" />
                 <div>
                   <p className="font-semibold mb-1">Phone</p>
-                  <p className="opacity-90">+84 XXX XXX XXX</p>
+                  <p className="opacity-90">506-113-1565</p>
                 </div>
               </div>
 
@@ -122,7 +122,7 @@ export default function Contact() {
                 <Mail className="w-6 h-6 mt-1 flex-shrink-0" />
                 <div>
                   <p className="font-semibold mb-1">Email</p>
-                  <p className="opacity-90">contact@devall.vn</p>
+                  <p className="opacity-90">philvu@devallsolutions.com</p>
                 </div>
               </div>
             </div>
